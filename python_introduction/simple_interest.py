@@ -1,5 +1,4 @@
 # This script calculates simple interest
-
 principal = 1000
 rate = 0.005
 time = 3
