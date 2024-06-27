@@ -5,5 +5,7 @@ num = int(input("Enter the size of the pattern: "))
 count = num
 
 while count != 0:
-    print ("*"*num)
     count -= 1
+    for i in range (num): 
+        print ("*", end='')
+    print ()
