@@ -2,6 +2,8 @@
 
 num = int(input("Enter the size of the pattern: "))
 # user input
+count = num
 
-for i in range (num):
+while count != 0:
     print ("*"*num)
+    count -= 1
