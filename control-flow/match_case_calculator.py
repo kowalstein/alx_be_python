@@ -7,10 +7,10 @@ operation = input("Choose the operation (+, -, *, /): ")
 
 match operation: 
     case "+":
-        print ("The result is "+str(first_num+second_num))
+        print (f"The result is {(first_num+second_num)}")
     case "-":
-        print ("The result is "+str(first_num-second_num))
+        print (f"The result is {(first_num-second_num)}")
     case "*":
-        print ("The result is "+str(first_num*second_num))
+        print (f"The result is {(first_num*second_num)}")
     case "/":
-        print ("The result is "+str(first_num/second_num))
+        print (f"The result is {(first_num/second_num)}")
