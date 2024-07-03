@@ -3,11 +3,14 @@
 def perform_operation(num1,num2,operation):
     match operation:
         case 'add':
-            result = float(num1)+float(num2)
+            result = (num1)+(num2)
         case 'subtract':
-            result = float(num1)-float(num2)
+            result = (num1)-(num2)
         case 'multiply':
-            result = float(num1)*float(num2)
+            result = (num1)*(num2)
         case 'divide':
-            result = float(num1)/float(num2)
+            if num2 == 0:
+                print ("Can't divide by 0")
+            else:
+                result = (num1)/(num2)
     return result
