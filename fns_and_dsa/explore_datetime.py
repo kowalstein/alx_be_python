@@ -1,17 +1,17 @@
 """ This script demonstrate the use of the datetime module for handling
-    date anf times in python."""
-from datetime import datetime
+    date and times in python."""
+from datetime import datetime, timedelta, date
 
 def display_current_datetime():
-    current_date = datetime.datetime.now()
-    print (f"Current date and time: {current_date.year}-{current_date.month}-{current_date.day} {current_date.hour}:{current_date.minute}:{current_date.second}")
+    current_date = datetime.now()
+    formatted = current_date.strftime("%Y-%m-%d %H:%M:%S")
+    print (formatted)
 
 def calculate_future_date(day):
-    t_delta = datetime.timedelta(days=day)
-    today = datetime.date.today()
+    t_delta = timedelta(days=day)
+    today = date.today()
     future_date = today + t_delta
     print (f"Future date: {future_date}")
-
 
 display_current_datetime()
 day = int(input("Enter the number of days to add to the current date: "))
