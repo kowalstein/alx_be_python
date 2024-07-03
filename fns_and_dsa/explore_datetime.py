@@ -1,6 +1,6 @@
 """ This script demonstrate the use of the datetime module for handling
     date anf times in python."""
-import datetime
+from datetime import datetime
 
 def display_current_datetime():
     current_date = datetime.datetime.now()
