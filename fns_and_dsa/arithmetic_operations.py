@@ -1,6 +1,6 @@
 """ This script defines a function that performs basic arithmetic operations."""
 
-def perform_operation(num1,num2,operation):
+def perform_operation(num1, num2, operation):
     match operation:
         case 'add':
             result = (num1)+(num2)
