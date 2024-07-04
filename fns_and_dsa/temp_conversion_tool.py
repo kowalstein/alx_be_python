@@ -14,15 +14,15 @@ def convert_to_fahrenheit(celsius):
     return fahrenheit
 
 def main():
-    temp = int (input ("Enter the temperature to convert: "))
+    temp = input ("Enter the temperature to convert: ")
     choice = input ("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
     
-    if choice == 'F':
+    if temp.isnumeric() and choice == 'F':
         print (f"{temp}°F is {convert_to_celsius(temp)}°C")
-    elif choice == 'C':
+    elif temp.isnumeric() and choice == 'C':
         print (f"{temp}°C is {convert_to_fahrenheit(temp)}°F")
     else:
-        print ("Invalid temperature")
+        print ("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
