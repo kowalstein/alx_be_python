@@ -2,7 +2,7 @@
     a BankAccount class that encapsulates banking operations."""
 
 class BankAccount:
-    def __init__ (self, account_balance):
+    def __init__ (self, account_balance = 0):
         self.balance = account_balance
 
     def deposit(self, amount):
