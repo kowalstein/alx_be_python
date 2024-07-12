@@ -6,11 +6,11 @@ class BankAccount:
         self.balance = account_balance
 
     def deposit(self, amount):
-        amount = float (input ("How much do you want to deposit: "))
+        amount = input ("How much do you want to deposit: ")
         self.balance += amount
     
     def withdraw(self, amount):
-        amount = float (input ("How much do you want to withdraw: "))
+        amount = input ("How much do you want to withdraw: ")
         if self.balance < amount:
             return False
         else:
