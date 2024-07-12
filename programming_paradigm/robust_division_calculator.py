@@ -9,7 +9,7 @@ def safe_divide(numerator, denominator):
     else:
         pass
     try:
-        numerator/denominator
+        float(numerator)/float(denominator)
     except ValueError:
         print ('Error: Please enter numeric values only.')
     else:
