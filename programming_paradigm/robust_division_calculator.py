@@ -10,4 +10,4 @@ def safe_divide(numerator, denominator):
         return ('Error: Please enter numeric values only.')
     else:
         print (f"The result of the division is {(numerator/denominator):1f}")
-    return
+        return
