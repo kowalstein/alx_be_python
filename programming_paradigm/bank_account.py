@@ -8,6 +8,7 @@ class BankAccount:
     def deposit(self, amount):
         amount = input ("How much do you want to deposit: ")
         self.balance = self.balance + amount
+        return self.balance
     
     def withdraw(self, amount):
         amount = input ("How much do you want to withdraw: ")
@@ -15,7 +16,7 @@ class BankAccount:
             return False
         else:
             self.balance = self.balance - amount
-            return True
+            return True, self.balance
     
     def display_balance(self):
         return f"Current Balance: {self.balance}"
