@@ -3,15 +3,15 @@
 
 def safe_divide(numerator, denominator):
     try:
-        float(numerator)/float(denominator)
+        numerator/denominator
     except ZeroDivisionError:
-        return ('Error: Cannot divide by zero.')
-    finally:
+        print ('Error: Cannot divide by zero.')
+    else:
         pass
     try:
         float(numerator)/float(denominator)
     except ValueError:
-        return ('Error: Please enter numeric values only.')
+        print ('Error: Please enter numeric values only.')
     else:
-        pass 
-    return (f"The result of the division is {float(numerator)/float(denominator)}")
+        print (f"The result of the division is {float(numerator)/float(denominator)}")
+    return
