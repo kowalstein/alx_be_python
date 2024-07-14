@@ -5,27 +5,27 @@ class Book:
         self.author = author
         self._is_checked_out = False
     
-    def check_out_book(self, title):
-        index = self._find_book_index(title)
+    def check_out_book(self):
+        index = self._find_book_index(self.title)
         if index is not None:
             if not self._books[index]._is_checked_out:
                 self._books[index]._is_checked_out = True
-                print (f"{title} checked out successfully.")
+                print (f"{self.title} checked out successfully.")
             else:
-                print (f"{title} is already checked out.")
+                print (f"{self.title} is already checked out.")
         else:
-            print (f"{title} not found in the library.")
+            print (f"{self.title} not found in the library.")
 
-    def return_book(self, title):
-        index = self._find_book_index(title)
+    def return_book(self):
+        index = self._find_book_index(self.title)
         if index is not None:
             if self._books[index]._is_checked_out:
                 self._books[index]._is_checked_out = False
-                print (f"{title} returned successfully.")
+                print (f"{self.title} returned successfully.")
             else:
-                print (f"{title} is not checked out.")
+                print (f"{self.title} is not checked out.")
         else:
-            print (f"{title} not found in the library.")
+            print (f"{self.title} not found in the library.")
 
 class Library(Book):
 
