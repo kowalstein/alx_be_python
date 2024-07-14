@@ -66,7 +66,32 @@ class Library(Book):
         else:
             print (f"{title} not found in the library.")
 
-    def list_availble_books(self):
+    def list_available_books(self):
         for book in self._books:
             if not book._is_checked_out:
                 print(f"{book.title} by {book.author}")
+
+# Creating instances of Book
+book1 = Book("Python Programming", "John Doe")
+book2 = Book("Data Structures and Algorithms", "Alice Smith")
+book3 = Book("Machine Learning Basics", "Bob Johnson")
+
+# Creating instance of Library
+library = Library()
+
+# Adding books to the library
+library.add_book(book1)
+library.add_book(book2)
+library.add_book(book3)
+
+# Checking out a book
+library.check_out_book("Python Programming")
+
+# Listing available books
+library.list_available_books
+
+# Returning a book
+library.return_book("Python Programming")
+
+# Listing available books after returning a book
+library.list_available_books()
