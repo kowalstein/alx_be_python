@@ -35,7 +35,7 @@ class Library(Book):
     def add_book(self,book):
         if isinstance(book, Book):
             self._books.append(book)
-            print (f"Book {book.title} by {book.author} added to library.")
+            print (f"{book.title} by {book.author} added to library.")
         else:
             print ("Invalid book object. Please provide a valid Book instance.")
     
