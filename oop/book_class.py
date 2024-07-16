@@ -13,9 +13,3 @@ class Book:
 
     def __del__(self):
         return f"Deleting {self.title}"
-
-
-my_book = Book("Hentai Express", "Walter Isaac", "2020")
-
-print (my_book)
-print (repr(my_book))
