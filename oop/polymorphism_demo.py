@@ -21,7 +21,7 @@ class Circle(Shape):
     
     def area(self):
         import math
-        return math.pi*self.radius**2
+        return math.pi*self.radius** 2
 
 # shapes = [
 #     Rectangle(10, 5),
